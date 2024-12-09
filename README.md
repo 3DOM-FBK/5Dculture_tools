@@ -3,7 +3,7 @@ Within this repository you will find the source code and scripts for the followi
 
 - 3d_effect
 - photo_colorization
-- VividLens
+- HistoryLens
 - UrbanRewind
 
 Each tool has been organised in a dedicated folder, within which you will find the specific documentation.
