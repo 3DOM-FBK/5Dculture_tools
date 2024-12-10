@@ -1,8 +1,8 @@
 # 5Dculture_tools
 Within this repository you will find the source code and scripts for the following tools:
 
-- 3d_effect
-- photo_colorization
+- VividHistory_3dEffect
+- VividHistory_colorization
 - HistoryLens
 - UrbanRewind
 

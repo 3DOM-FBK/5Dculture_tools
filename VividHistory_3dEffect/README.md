@@ -1,4 +1,4 @@
-# 3d_photo
+# VividHistory_3dEffect
 The script allows two separate processes to be executed, one to search for data via the Europeana API and the other to apply 3D effects on images, with configuration parameters passed via the command line. Its flexibility allows it to handle different operations depending on the process required, supporting execution on both Linux and WSL systems.
 
 ## Handling of command line arguments

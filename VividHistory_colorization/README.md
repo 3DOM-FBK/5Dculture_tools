@@ -1,4 +1,4 @@
-# Photo Colorization
+# VividHistory_colorization
 This script allows two main operations to be performed via the command line: searching Europeana and colouring images. Depending on the --process parameter, the script invokes the appropriate Python scripts, allowing data to be collected from Europeana or a colouring effect to be applied to images. The workflow is easily configurable thanks to the arguments passed via the command line.
 
 ## Collecting arguments via the command line
