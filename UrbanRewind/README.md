@@ -36,3 +36,18 @@ Below are some examples of the use of the different regressors:
 
 ### Catboost
 `python main.py --process regression --outDir <YOUR_DIR> --rootDir <YOUR_DIR> --attr_to_predict h --train_dir <YOUR_DIR> --train_file <YOUR_CSV_FILE> --export_suffix_train _augm_ --predict_dir <YOUR_DIR> --predict_files <YOUR_CSV_FILE> --export_suffix_predict _pred_ --regressor catboost --isrfe False`
+
+### svr
+`python main.py --process regression --outDir <YOUR_DIR> --rootDir <YOUR_DIR> --attr_to_predict h --train_dir <YOUR_DIR> --train_file <YOUR_CSV_FILE> --export_suffix_train _augm_ --predict_dir <YOUR_DIR> --predict_files <YOUR_CSV_FILE> --export_suffix_predict _pred_ --regressor svr --isrfe False`
+
+### mlp
+`python main.py --process regression --outDir <YOUR_DIR> --rootDir <YOUR_DIR> --attr_to_predict h --train_dir <YOUR_DIR> --train_file <YOUR_CSV_FILE> --export_suffix_train _augm_ --predict_dir <YOUR_DIR> --predict_files <YOUR_CSV_FILE> --export_suffix_predict _pred_ --regressor mlp`
+
+### xgb
+`python main.py --process regression --outDir <YOUR_DIR> --rootDir <YOUR_DIR> --attr_to_predict h --train_dir <YOUR_DIR> --train_file <YOUR_CSV_FILE> --export_suffix_train _augm_ --predict_dir <YOUR_DIR> --predict_files <YOUR_CSV_FILE> --export_suffix_predict _pred_ --regressor xgb`
+
+### xgb
+`python main.py --process regression --outDir <YOUR_DIR> --rootDir <YOUR_DIR> --attr_to_predict h --train_dir <YOUR_DIR> --train_file <YOUR_CSV_FILE> --export_suffix_train _augm_ --predict_dir <YOUR_DIR> --predict_files <YOUR_CSV_FILE> --export_suffix_predict _pred_ --regressor lgbm`
+
+### rf
+`python main.py --process regression --outDir <YOUR_DIR> --rootDir <YOUR_DIR> --attr_to_predict h --train_dir <YOUR_DIR> --train_file <YOUR_CSV_FILE> --export_suffix_train _augm_ --predict_dir <YOUR_DIR> --predict_files <YOUR_CSV_FILE> --export_suffix_predict _pred_ --regressor rf`

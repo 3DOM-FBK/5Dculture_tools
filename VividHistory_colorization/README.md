@@ -3,7 +3,7 @@ This script allows two main operations to be performed via the command line: sea
 
 ## Collecting arguments via the command line
 The main topics collected include:
---process: determines the type of process to execute, which can be ‘europeana’ (for searching Europeana) or ‘colourise’ (for colouring images).
+--process: determines the type of process to execute, which can be ‘europeana’ (for searching Europeana) or ‘colorize’ (for colouring images).
 --outDir: specifies the output directory where the results are to be saved.
 - Additional parameters specific to each process, such as:
     --europeanaToken, --europeanaQuery, --maxRows for the Europeana search process.
@@ -14,8 +14,13 @@ If the --process parameter is set to ‘europeana’, the script executes anothe
 The parameters --europeanaToken, --europeanaQuery and --maxRows are passed to configure the search, and the results are saved in the specified output directory.
 
 ## Colorize' process
-If the --process parameter is set to ‘colourise’, the script executes the image colourisation process via another Python script (colourise_image.py).
+If the --process parameter is set to ‘colorize’, the script executes the image colourisation process via another Python script (img_colorization.py).
 The --input parameter is provided to specify the image to be coloured, along with a process order (in this case, ‘DeOldify’) and the output directory via --output.
 
-## error management
-If the --process parameter is invalid (other than ‘european’ or ‘colourise’), the script terminates with an error and a message indicating the cause of the problem.
+## Error management
+If the --process parameter is invalid (other than ‘european’ or ‘colorize’), the script terminates with an error and a message indicating the cause of the problem.
+
+# Installation
+In the folder provided is the `Dockerfile`, which contains all the libraries required for the application to function correctly. Alternatively, you can download the pre-compiled image directly from Docker Hub by running the following command:
+
+`docker pull 3domfbk/VividHistory_colorization:<tag>`
