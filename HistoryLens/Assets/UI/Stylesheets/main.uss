@@ -1,0 +1,101 @@
+.introduction {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
+    border-bottom-left-radius: 44px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    max-height: 2000px;
+    flex-direction: column;
+    position: absolute;
+    font-size: 14px;
+    transform-origin: bottom;
+}
+
+.introduction-close {
+    transform-origin: bottom;
+    translate: 0 100%;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.main-btn {
+    width: 220px;
+    height: 150px;
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
+    border-bottom-left-radius: 44px;
+    background-color: rgba(255, 255, 255, 0.75);
+    align-items: center;
+    justify-content: center;
+}
+
+.debug-show {
+    flex-grow: 1;
+    width: 100%;
+    height: 180px;
+    max-width: 1200px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    display: flex;
+}
+
+.debug-hide {
+    display: none;
+}
+
+.anim_btn_elem {
+    flex-grow: 1;
+    width: 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgb(209, 209, 214);
+}
+
+.anim_btn_elem_credit {
+    translate: 0 0;
+    transition-duration: 0.5s;
+}
+
+.anim_btn_elem_info {
+    translate: 100% 0;
+    transition-duration: 0.5s;
+}
+
+.text_active {
+    font-size: 44px;
+    -unity-font-style: bold;
+    color: rgb(0, 122, 255);
+}
+
+.text_disable {
+    font-size: 44px;
+    -unity-font-style: bold;
+    color: rgba(27, 27, 27, 0.75);
+}
+
+.ar_icon_start {
+    flex-grow: 1;
+    position: absolute;
+    align-self: center;
+    top: 253px;
+    width: 280px;
+    height: 280px;
+    background-image: url("project://database/Assets/UI/Images/arIconCamera.png?fileID=2800000&guid=876fa0b0b0b7ee442aea8521ff7f98b1&type=3#arIconCamera");
+    translate: -200px 0;
+    transition-duration: 1.5s;
+}
+
+.ar_icon_end {
+    translate: 200px 0;
+    transition-duration: 1.5s;
+}

@@ -1,0 +1,69 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheets/main.uss?fileID=7433441132597879392&amp;guid=ddf1b5e3fdf559d4cbca004d7750cbfd&amp;type=3#main" />
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: column-reverse; align-items: center;">
+        <ui:VisualElement name="introduction" class="introduction" style="display: none;">
+            <ui:VisualElement name="text-container" style="flex-grow: 1; width: 100%; align-items: center; padding-top: 60px; padding-right: 60px; padding-bottom: 60px; padding-left: 60px;">
+                <ui:Label tabindex="-1" text="5Dculture App" parse-escape-sequences="true" display-tooltip-when-elided="true" name="titol" style="font-size: 80px; -unity-font-style: bold; margin-bottom: 60px; white-space: normal; margin-top: 20px;" />
+                <ui:Label tabindex="-1" text="5Dculture enriches the offer of European 3D digital cultural heritage assets in the data space and fosters their reuse in important domains such as education, tourism and the wider cultural and creative sectors towards socially and economically sustainable outcomes." parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" style="font-size: 50px; white-space: normal; -unity-text-align: upper-center; color: rgba(27, 27, 27, 0.75); padding-right: 34px; padding-left: 34px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="btn-container" style="flex-grow: 1; width: 100%; padding-top: 60px; padding-right: 60px; padding-bottom: 60px; padding-left: 60px; margin-bottom: 60px; align-items: center;">
+                <ui:Button text="Get Started" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-close-introduction" style="height: 140px; font-size: 50px; -unity-font-style: bold; color: rgb(255, 255, 255); background-color: rgb(50, 215, 75); border-top-left-radius: 22px; border-top-right-radius: 22px; border-bottom-right-radius: 22px; border-bottom-left-radius: 22px; width: 100%; max-width: 640px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="main" style="flex-grow: 1; width: 100%; display: flex;">
+            <ui:VisualElement name="top-container" style="flex-grow: 1; flex-direction: row; justify-content: space-between; padding-top: 60px; padding-right: 60px; padding-bottom: 60px; padding-left: 60px; margin-top: 80px;">
+                <ui:Button text="&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-debug" class="main-btn">
+                    <ui:VisualElement name="radar-icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/radar.png?fileID=2800000&amp;guid=1c27d14f6c8363747a3e552b23dedad5&amp;type=3#radar&quot;); width: 120px; align-items: auto; max-height: 120px;" />
+                </ui:Button>
+                <ui:Button text="&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-info" class="main-btn">
+                    <ui:VisualElement name="info-icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/info-lg.png?fileID=2800000&amp;guid=b81d81bb764e480418be8d58c942ebc9&amp;type=3#info-lg&quot;); width: 18px; align-items: auto; max-height: 64px;" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="debug-container" style="flex-grow: 1; position: absolute; bottom: 0; width: 100%; margin-bottom: 60px; align-items: center; justify-content: flex-end; flex-direction: column-reverse;">
+                <ui:VisualElement name="immersal-logo" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/IM_1%20line%20yellow.png?fileID=2800000&amp;guid=395645dba6b2ef643954cd6c2d83b5ef&amp;type=3#IM_1 line yellow&quot;); width: 100%; height: 110px; max-width: 500px;" />
+                <ui:VisualElement name="debug" class="debug-show debug-hide">
+                    <ui:VisualElement name="border" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.75); border-top-left-radius: 44px; border-top-right-radius: 44px; border-bottom-right-radius: 44px; border-bottom-left-radius: 44px; align-items: center; justify-content: center;">
+                        <ui:Label tabindex="-1" text="Successful localization: 0/0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="debug-label" style="font-size: 50px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="AR-icon-anim" style="flex-grow: 1; position: absolute; align-self: center; top: 35%; width: 800px; height: 800px;">
+                <ui:VisualElement name="Ar-rect" style="flex-grow: 1; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/UI/Images/arIconRect.png?fileID=2800000&amp;guid=2e8eed39ffb210a40a84e7e24a399cc3&amp;type=3#arIconRect&quot;);" />
+                <ui:VisualElement name="Ar-phone" class="ar_icon_start" />
+                <ui:Label tabindex="-1" text="Scan the environment around you" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="position: absolute; align-self: center; top: 639px; font-size: 70px; white-space: normal; max-width: 840px; -unity-text-align: upper-center; color: rgb(255, 255, 255); -unity-font-style: bold;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Tracking Status..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="tracking-label" style="bottom: 400px; flex-direction: column; position: absolute; font-size: 28px; -unity-font-style: bold; color: rgb(0, 0, 0);" />
+        <ui:VisualElement name="info" style="flex-grow: 1; width: 100%; background-color: rgb(255, 255, 255); align-items: center; display: none;">
+            <ui:VisualElement name="credit-container" style="flex-grow: 1; width: 100%; align-items: center; padding-top: 0; display: flex;">
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" name="ScrollView" style="width: 100%; padding-top: 80px; padding-right: 80px; padding-bottom: 80px; padding-left: 80px; max-height: 100%;">
+                    <ui:Label tabindex="-1" text="5Dculture App" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 100px; -unity-font-style: bold; display: flex; -unity-text-align: upper-center; margin-top: 240px;" />
+                    <ui:Label tabindex="-1" text="This template application was developed by 3DOM - FBK (Fondazione Bruno Kessler) using Unity and Immersal AR SDK within the 5Dculture project." parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-top: 34px; font-size: 40px; color: rgba(27, 27, 27, 0.75); white-space: normal; padding-right: 60px; padding-left: 60px; -unity-text-align: upper-center; display: flex;" />
+                    <ui:VisualElement name="5dculture-logo" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/5DCulture_Logo.png?fileID=2800000&amp;guid=9cbf5ca2eea43b84982b3805ef30dc41&amp;type=3#5DCulture_Logo&quot;); align-self: center; min-width: 300px; min-height: 300px; max-width: 500px; max-height: 500px; margin-top: 80px;" />
+                    <ui:VisualElement name="3dom-logo" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/3DOM_colori.jpg?fileID=2800000&amp;guid=9de988ef946040241a9062cf55dbab42&amp;type=3#3DOM_colori&quot;); align-self: center; min-width: 450px; min-height: 170px; margin-top: 80px;" />
+                    <ui:VisualElement name="immersal-logo" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/IM_2%20line%20black.png?fileID=2800000&amp;guid=f22fb9c5c735ac84bbfb0e252d51a96e&amp;type=3#IM_2 line black&quot;); align-self: center; min-width: 600px; min-height: 220px; max-width: 500px; max-height: 166px; margin-top: 80px; margin-bottom: 280px;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:VisualElement name="tutorial-container" style="flex-grow: 1; width: 100%; display: none;">
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" style="width: 100%; padding-right: 80px; padding-left: 80px;">
+                    <ui:Label tabindex="-1" text="Information" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 100px; margin-top: 320px; -unity-font-style: bold;" />
+                    <ui:Label tabindex="-1" text="This application uses the Immersal SDK library for spatial mapping and visual positioning system. In particular it allows you to merge digital content with the physical world by enabling devices to precisely locate themselves in the physical world. &#10;You could think of it as an ultra accurate GPS with full six degrees of freedom (6DoF) support and realtime updates. Not only does the device know its position in the world, but also the exact orientation.&#10;&#10;The solution is completely markerless so you don&apos;t need to print out QR codes or anything similar. It uses the environment itself as a &quot;marker&quot;.&#10;&#10;You can create Augmented Reality (AR) experiences and tools that are tied to real, physical locations. These next-generation AR applications allow users to interact with their environment and do things never possible before." parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 40px; white-space: normal; padding-top: 60px; padding-bottom: 320px;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:Button text="&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-close-info" style="position: absolute; top: 120px; right: 60px; width: 120px; height: 120px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; align-items: center; justify-content: center; background-color: rgb(72, 72, 74);">
+                <ui:VisualElement name="close-icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/Close_Color.png?fileID=2800000&amp;guid=9cbe587552343224eaa802b3854976de&amp;type=3#Close_Color&quot;); min-width: 50px; min-height: 50px; position: absolute;" />
+            </ui:Button>
+            <ui:VisualElement name="bottom-container" style="flex-grow: 1; position: absolute; bottom: 0; width: 100%; max-width: 1200px; align-items: center; justify-content: flex-end; margin-bottom: 60px; padding-top: 40px; padding-right: 40px; padding-bottom: 40px; padding-left: 40px;">
+                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 120px; background-color: rgb(242, 242, 247); border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; display: flex;">
+                    <ui:VisualElement name="anim-btn-elem" class="anim_btn_elem anim_btn_elem_credit" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="bottom-container" style="flex-grow: 1; position: absolute; bottom: 0; width: 100%; max-width: 1200px; align-items: center; justify-content: flex-end; margin-bottom: 60px; padding-top: 40px; padding-right: 40px; padding-bottom: 40px; padding-left: 40px;">
+                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 120px; background-color: rgba(242, 242, 247, 0); border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-direction: row;">
+                    <ui:Button text="Credit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-credit" class="text_active" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; width: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(188, 188, 188, 0);" />
+                    <ui:Button text="Info" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-tutorial" class="text_active text_disable" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 50%; background-color: rgba(188, 188, 188, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
