@@ -23,4 +23,4 @@ If the --process parameter is invalid (other than ‘european’ or ‘colorize�
 # Installation
 In the folder provided is the `Dockerfile`, which contains all the libraries required for the application to function correctly. Alternatively, you can download the pre-compiled image directly from Docker Hub by running the following command:
 
-`docker pull 3domfbk/VividHistory_colorization:<tag>`
+`docker pull 3domfbk/vividhistory_colorization:<tag>`
