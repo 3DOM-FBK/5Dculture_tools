@@ -24,3 +24,12 @@ If the --process parameter is invalid (other than ‘european’ or ‘colorize�
 In the folder provided is the `Dockerfile`, which contains all the libraries required for the application to function correctly. Alternatively, you can download the pre-compiled image directly from Docker Hub by running the following command:
 
 `docker pull 3domfbk/vividhistory_colorization:<tag>`
+
+## Example
+Below is an example:
+
+`docker run --rm -it -v <_HOST_PATH_>:/data 3domfbk/vividhistory_colorization:<tag> --process colorize --outDir /data --input /data/<_IMG_NAME>.jpg`
+
+<img src="assets/test_img_in.jpg" alt="input image" width="400" />
+
+<img src="assets/test_img_out.jpg" alt="input image" width="400" />
