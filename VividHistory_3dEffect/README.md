@@ -26,6 +26,6 @@ Below is an example:
 
 `docker run --rm -it --gpus all --privileged -v <_HOST_PATH_>:/data 3domfbk/vividhistory_3deffect:<tag> --process effect3d --outDit /data --input /data/<_IMG_NAME>.jpg`
 
-<img src="assets/img_in.jpg" alt="input image" width="400" />
+<img src="assets/img_in.jpeg" alt="input image" width="400" />
 
-<img src="assets/img_out.mp4" alt="input image" width="400" />
+<img src="assets/img_out.gif" alt="output video" width="400" />
