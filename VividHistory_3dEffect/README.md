@@ -20,3 +20,12 @@ The script allows two separate processes to be executed, one to search for data 
 In the folder provided is the `Dockerfile`, which contains all the libraries required for the application to function correctly. Alternatively, you can download the pre-compiled image directly from Docker Hub by running the following command:
 
 `docker pull 3domfbk/vividhistory_3deffect:<tag>`
+
+## Example
+Below is an example:
+
+`docker run --rm -it --gpus all --privileged -v <_HOST_PATH_>:/data 3domfbk/vividhistory_3deffect:<tag> --process effect3d --outDit /data --input /data/<_IMG_NAME>.jpg`
+
+<img src="assets/img_in.jpg" alt="input image" width="400" />
+
+<img src="assets/img_out.mp4" alt="input image" width="400" />

@@ -8,7 +8,7 @@ def argumentsParse():
     parser = argparse.ArgumentParser(description='3d photo effect')
     parser.add_argument('--input', type=str, default=None, help='Input image, Only .jpg image')
     parser.add_argument('--output', type=str, default=None, help='Output folder')
-    parser.add_argument('--effect_3d', type=str, default="dolly-zoom-in", help='Specify 3D effect ["dolly-zoom-in", "zoom-in", "circle", "swing"]')
+    parser.add_argument('--effect3d', type=str, default="dolly-zoom-in", help='Specify 3D effect ["dolly-zoom-in", "zoom-in", "circle", "swing"]')
     parser.add_argument('--wsl', type=str, default="True", help='Specifies whether the script is executed via WSL or not. [default=True]')
 
     args = parser.parse_args()
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         print ("Error - Copy input image into image folder")
         sys.exit()
     
-    effect_3d = {
+    effect3d = {
         "dolly-zoom-in": "argument_dolly_zoom_in.yml",
         "zoom-in": "argument_zoom_in.yml",
         "circle": "argument_circle.yml",
@@ -61,9 +61,9 @@ if __name__ == "__main__":
     }
     
     if (args.wsl.lower() == "true"):
-        os.system("MKL_THREADING_LAYER=GNU xvfb-run python main.py --config " + effect_3d[args.effect_3d])
+        os.system("MKL_THREADING_LAYER=GNU xvfb-run python main.py --config " + effect3d[args.effect3d])
     else:
-        os.system("xvfb-run python main.py --config " + effect_3d[args.effect_3d])
+        os.system("xvfb-run python main.py --config " + effect3d[args.effect3d])
     
     try:
         files = os.listdir(os.path.join("/3d-photo-inpainting", "video"))

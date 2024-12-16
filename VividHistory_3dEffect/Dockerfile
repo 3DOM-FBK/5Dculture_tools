@@ -14,4 +14,4 @@ RUN pip install wget
 COPY *.py .
 COPY argument_*.yml .
 
-ENTRYPOINT [ "python", "main.py" ]
+ENTRYPOINT [ "python", "_main.py" ]

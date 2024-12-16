@@ -32,4 +32,4 @@ Below is an example:
 
 <img src="assets/test_img_in.jpg" alt="input image" width="400" />
 
-<img src="assets/test_img_out.jpg" alt="input image" width="400" />
+<img src="assets/test_img_out.png" alt="output image" width="400" />
